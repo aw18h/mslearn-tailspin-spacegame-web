@@ -1,11 +1,11 @@
 trigger:
 - '*'
 
-pool:
-  vmImage: 'ubuntu-20.04'
+pool: MyAgent
+  vmImage: 'windows-latest'
   demands:
-  - npm
-
+  - dotnet
+ 
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
